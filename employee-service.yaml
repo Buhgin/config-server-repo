@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/employee
+    username: postgres
+    password: Duotestis1
+
+  jpa:
+    generate-ddl: true
+    show-sql: false
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        enable_lazy_load_no_trans: true
+        format_sql: true
+        generate_statistics: false
+        jdbc:
+          time_zone: UTC
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
