@@ -3,7 +3,8 @@ spring:
     url: jdbc:postgresql://localhost:5432/microservices
     username: postgres
     password: Duotestis1
-
+  boot:
+    message: hello department service update!
   jpa:
     generate-ddl: true
     show-sql: false
