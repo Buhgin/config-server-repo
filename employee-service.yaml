@@ -3,6 +3,8 @@ spring:
     url: jdbc:postgresql://localhost:5432/employee
     username: postgres
     password: Duotestis1
+  boot:
+    message: hello employee-service новое обновление   
 
   jpa:
     generate-ddl: true
