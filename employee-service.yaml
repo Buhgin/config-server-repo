@@ -4,7 +4,7 @@ spring:
     username: postgres
     password: Duotestis1
   boot:
-    message: hello employee-service update  
+    message: hello employee-service update Новый через rabbit 
 
   jpa:
     generate-ddl: true
