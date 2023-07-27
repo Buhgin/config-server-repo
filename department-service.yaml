@@ -4,7 +4,7 @@ spring:
     username: postgres
     password: Duotestis1
   boot:
-    message: hello department service новое обновление 
+    message: hello department service новое обновление rabbit
   jpa:
     generate-ddl: true
     show-sql: false
