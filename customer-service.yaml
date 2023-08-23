@@ -1,22 +1,23 @@
-datasource:
-  url: jdbc:postgresql://localhost:5432/food_delivery_service
-  username: postgres
-  password: Duotestis1
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/food_delivery_service
+    username: postgres
+    password: Duotestis1
 
-jpa:
-  generate-ddl: true
-  show-sql: false
-  defer-datasource-initialization: true
-  properties:
+  jpa:
+    generate-ddl: true
+    show-sql: false
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        enable_lazy_load_no_trans: true
+        format_sql: true
+        generate_statistics: false
+        jdbc:
+          time_zone: UTC
     hibernate:
-      dialect: org.hibernate.dialect.PostgreSQLDialect
-      enable_lazy_load_no_trans: true
-      format_sql: true
-      generate_statistics: false
-      jdbc:
-        time_zone: UTC
-  hibernate:
-    ddl-auto: update
+      ddl-auto: update
 
 server:
   port: 8081
